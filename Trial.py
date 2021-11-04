@@ -4,26 +4,6 @@ import os
 def clear():
   os.system('cls' if os.name == 'nt' else "printf '\033c'")
 
-def options():
-    print (' ------------------------------------------------ ')
-    print ('|                                                |')
-    print ('|    07Menu                                      |') 
-    print ('|    Name : Celestine Sutanto                    |')
-    print ('|    Version : 01                                |')
-    print ('|                                                |')
-    print (' ------------------------------------------------ ')
-    print ('')
-    print ('1. Hello World')
-    print ('2. Goodbye World')
-    print ('3. Goodbye Person')
-    print ('4. Good Teacher')
-    print ('5. forLoop')
-    print ('6. whileLoop')
-    print ('7. string Loop')
-    print ('8. Convert to ascii')
-    print ('9. Encode a string')
-    print ('x. To Exit')
-
 def helloworld():
     print ('')
     print ('----Start of Output ---------------------------')
@@ -91,30 +71,43 @@ def whileloop():
         print ('')
     print ('----End of Output -----------------------------')
 
+clear()
+print (' ------------------------------------------------ ')
+print ('|                                                |')
+print ('|    07Menu                                      |') 
+print ('|    Name : Celestine Sutanto                    |')
+print ('|    Version : 01                                |')
+print ('|                                                |')
+print (' ------------------------------------------------ ')
+print ('')
+print ('1. Hello World')
+print ('2. Goodbye World')
+print ('3. Goodbye Person')
+print ('4. Good Teacher')
+print ('5. forLoop')
+print ('6. whileLoop')
+print ('7. string Loop')
+print ('8. Convert to ascii')
+print ('9. Encode a string')
+print ('x. To Exit')
+
 while True:
-    options()
     menu = input ('Enter an option ')
     valid = ["1", "2", "3", "4", "5", "6", "x"]
 
     if menu in valid:
         if menu == '1':
             helloworld()
-            clear()
         elif menu == '2':
             goodbyeworld()
-            clear()
         elif menu == '3':
             goodbyeperson()
-            clear()
         elif menu == '4':
             goodteacher()
-            clear()
         elif menu == '5':
             forloop()
-            clear()
         elif menu == '6':
             whileloop()
-            clear()
         elif menu == 'x':
             print ('')
             print ('----Start of Output ---------------------------')
@@ -138,4 +131,3 @@ while True:
     print ('')
     print ('')
     input ('Press Enter to continue')
-
