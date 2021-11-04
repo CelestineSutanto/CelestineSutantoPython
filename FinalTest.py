@@ -123,8 +123,8 @@ def encodestring():
     print ('')
     print ('----End of Output -----------------------------')
 
-options()
 while True:
+    options()
     menu = input ('Enter an option ')
     valid = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "x"]
 

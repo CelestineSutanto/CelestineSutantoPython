@@ -1,15 +1,13 @@
 import sys
 import os
 
-def clear():
-  os.system('cls' if os.name == 'nt' else "printf '\033c'")
-
 def options():
+    os.system('cls')
     print (' ------------------------------------------------ ')
     print ('|                                                |')
     print ('|    07Menu                                      |') 
     print ('|    Name : Celestine Sutanto                    |')
-    print ('|    Version : 01                                |')
+    print ('|    Version : 01.1                              |')
     print ('|                                                |')
     print (' ------------------------------------------------ ')
     print ('')
@@ -90,7 +88,8 @@ def whileloop():
         print ('')
         print ('')
     print ('----End of Output -----------------------------')
-
+os.system('cls')
+print("---------")
 while True:
     options()
     menu = input ('Enter an option ')
@@ -99,22 +98,16 @@ while True:
     if menu in valid:
         if menu == '1':
             helloworld()
-            clear()
         elif menu == '2':
             goodbyeworld()
-            clear()
         elif menu == '3':
             goodbyeperson()
-            clear()
         elif menu == '4':
             goodteacher()
-            clear()
         elif menu == '5':
             forloop()
-            clear()
         elif menu == '6':
             whileloop()
-            clear()
         elif menu == 'x':
             print ('')
             print ('----Start of Output ---------------------------')
