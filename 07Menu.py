@@ -1,6 +1,8 @@
 import sys
+import os
 
 def options():
+    os.system('cls')
     print (' ------------------------------------------------ ')
     print ('|                                                |')
     print ('|    07Menu                                      |') 
@@ -72,6 +74,7 @@ def forloop():
 def whileloop():
     print ('')
     print ('----Start of Output ---------------------------')
+    print ('')
     subject = input ('What is the name of this subject ')
     while subject != 'IST':
         print ('Not Correct - try again')
@@ -127,3 +130,4 @@ while True:
     print ('')
     print ('')
     input ('Press Enter to continue')
+
